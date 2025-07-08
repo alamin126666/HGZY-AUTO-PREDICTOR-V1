@@ -1,0 +1,11 @@
+
+services:
+  - type: web
+    name: hgzy-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: TOKEN
+        value: 7710901474:AAFtad8zJcFIqd2FBAn3A2-YplEj8jbh_lU
